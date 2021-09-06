@@ -1,0 +1,11 @@
+import React from 'react';
+import { Tile } from './tile';
+
+
+export function TileList({data}) {
+    return (
+        <div>
+            {data.map((value, index) => <Tile value={value} key={index} />)}
+        </div>
+    );
+}
